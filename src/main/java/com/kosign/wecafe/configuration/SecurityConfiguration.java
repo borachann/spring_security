@@ -115,7 +115,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 					.rememberMe()
 					.rememberMeParameter("remember-me")
 					.tokenRepository(persistentTokenRepository())
-					.tokenValiditySeconds(86400)
+					.tokenValiditySeconds(864000)
 					.key("SpringSecurityWeCafe");
 		
 		http.logout()
